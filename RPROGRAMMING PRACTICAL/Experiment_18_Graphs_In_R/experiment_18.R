@@ -1,0 +1,6 @@
+par(mfrow = c(2, 3))
+boxplot(mpg ~ cyl, data = mtcars, main = "Boxplot")
+hist(airquality$Temp, main = "Histogram")
+barplot(table(mtcars$gear), main = "Bar Plot")
+plot(airquality$Wind[1:30], type = "l", main = "Line Chart")
+plot(iris$Sepal.Length, iris$Petal.Length, col = iris$Species, main = "Scatter Plot")
